@@ -50,3 +50,13 @@ Some requests require an authorization token. Use header like
 ```
 "Authorization": "Bearer {token}"
 ```
+# Important notes for developers:
+To add a new package, use
+```
+Poetry add <name_package>
+```
+ *(It's an alternative to the command from pip: `pip install <name_package>`)
+### After that, need to update the file requirements.txt:
+```
+poetry export -f requirements.txt --output requirements.txt --without-hashes
+```
