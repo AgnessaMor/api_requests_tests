@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "API Tests Swagger Store"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.4.0"
+requests = "^2.31.0"
+faker = "^19.2.0"
+flake8 = "^6.0.0"
+cattrs = "^23.1.2"
+attrs = "^23.1.0"
+pre-commit = "^3.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

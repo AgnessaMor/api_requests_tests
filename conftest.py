@@ -1,4 +1,8 @@
+import logging
 
+import pytest
+
+from fixtures.app import ClientApp
 
 logger = logging.getLogger("api")
 
@@ -18,6 +22,6 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="session")
 def app():
-    url = 'http://localhost:56733'
+    url = "http://localhost:56733"
     logger.info(f"Start api tests, url is {url}")
     yield ClientApp(url)
